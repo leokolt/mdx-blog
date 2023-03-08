@@ -1,4 +1,4 @@
-import Chromium from 'Chromium-aws-lambda';
+import Chromium from 'chromium-aws-lambda';
 import { createHash } from 'crypto';
 import fs from 'fs';
 
