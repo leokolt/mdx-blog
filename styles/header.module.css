@@ -1,0 +1,27 @@
+/*themetoggle*/
+.toggleButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    line-height: 1;
+    width: 80px;
+    height: 38px;
+    padding: 4px;
+    border: 0;
+    border-radius: calc(80px / 2);
+    cursor: pointer;
+    background: #000;
+    transition: background 0.25s ease-in-out;
+  }
+
+  .toggleThumb {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(10px - 5px * 2);
+    height: calc(10px -5px * 2);
+    border-radius: 50%;
+    background: white;
+  }

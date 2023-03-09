@@ -3,6 +3,7 @@ import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import { getAllPostsPath, getPostData } from '@/utils/getPostsData.js';
 import Button from '@/components/button';
+import SharePost from '@/components/share-post';
 //import Link from 'next/link'
 
 const components = {
@@ -26,6 +27,7 @@ export default function Blog({ postContent, postMetadata }) {
                 <p>{postMetadata.description}</p>
                 <MDXRemote {...postContent} components = {components} />
             </div>
+            <SharePost/>
         </div>
         </>
 
