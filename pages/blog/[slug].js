@@ -9,15 +9,21 @@ const components = {
   Button
 }
 
-export default function Blog({ postContent }) {
+export default function Blog({ postContent, postMetadata }) {
 
     return (
         <>
         <Head>
             <title>Next.js | Tech Radar</title>
+            <meta
+                property="og:image"
+                content={`http://localhost:3000/api/og?title=${postMetadata.title}&description=${postMetadata.description}`}
+            />
         </Head>
         <div>
             <div className = 'blog-content'>
+                <h1>{postMetadata.title}</h1>
+                <p>{postMetadata.description}</p>
                 <MDXRemote {...postContent} components = {components} />
             </div>
         </div>
