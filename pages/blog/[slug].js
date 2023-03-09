@@ -17,7 +17,7 @@ export default function Blog({ postContent, postMetadata }) {
             <title>Next.js | Tech Radar</title>
             <meta
                 property="og:image"
-                content={`http://localhost:3000/api/og?title=${postMetadata.title}&description=${postMetadata.description}`}
+                content={`https://mdx-blog-zeta.vercel.app/api/og?title=${postMetadata.title}&description=${postMetadata.description}`}
             />
         </Head>
         <div>
